@@ -1,0 +1,170 @@
+/* General */
+body {
+  background-color: #f4f4f9;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 600px;
+  margin-top: 100px;
+}
+
+/* Estilo de las tarjetas */
+.card {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  background-color: #007bff;
+  color: white;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+/* Formulario */
+.form-label {
+  font-weight: bold;
+}
+
+/* Botones */
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-success {
+  background-color: #28a745;
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border: none;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+/* Estilos específicos para la sección de perfil de empresa y postulantes */
+.card-body h4, .card-body h5 {
+  margin-bottom: 20px;
+}
+
+textarea.form-control {
+  height: 150px;
+}
+
+/* Estilo para las tarjetas de vacantes */
+.card-job {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.card-job h5 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.card-job p {
+  color: #555;
+}
+
+.card-job .btn {
+  margin-top: 10px;
+}
+
+/* Modal y elementos de vista previa */
+#register {
+  display: none;
+}
+
+/* Estilos para el perfil de empresa y publicación de vacantes */
+
+/* Estilo de tarjetas para vacantes */
+.card-job {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.card-job h5 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.card-job p {
+  color: #555;
+}
+
+.card-job .btn {
+  margin-top: 10px;
+}
+
+/* Formulario de creación de vacante */
+.card-body form {
+  margin-top: 20px;
+}
+
+.card-body input, .card-body textarea, .card-body select {
+  margin-bottom: 15px;
+}
+
+/* Botones */
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-warning {
+  background-color: #ffc107;
+  border: none;
+}
+
+.btn-warning:hover {
+  background-color: #e0a800;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border: none;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}
+
+/* Formulario de perfil de empresa */
+.card-body h4, .card-body h5 {
+  margin-bottom: 20px;
+}
+
+textarea.form-control {
+  height: 150px;
+}
+
+.w-100 {
+  width: 100%;
+}
