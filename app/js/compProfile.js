@@ -44,6 +44,8 @@ async function registProf(logo, desc, sector, comp) {
             desc: desc,
             sector: sector
         }
+        console.log(comp);
+        
     const response = await fetch(`http://localhost:3000/users/${comp.profile}`, {
         method: 'POST',
         headers: {

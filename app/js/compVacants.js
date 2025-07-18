@@ -5,17 +5,19 @@ export async function compVacants() {
     const list = document.getElementById('jobList')
     const comp = JSON.parse(sessionStorage.getItem('user'))
     const vacants = await getCompVacants(comp);
-    console.log(vacants)
     list.innerHTML = ""
     if (vacants) {
         vacants.forEach(vacant => {
-            list.innerHTML += `<div class="col-md-4 mb-4">
-                                    <div class="card card-job">
+            list.innerHTML += `<div class="col"">
+                                    <div class="card h-100">
                                         <div class="card-body">
-                                            <h5 class="card-title">${vacant.name}</h5>
-                                            <p class="card-text">${vacant.desc}</p>
-                                            <button class="btn btn-warning w-100">Editar</button>
-                                            <button class="btn btn-danger w-100 mt-2">Cerrar Vacante</button>
+                                            <h5 class="card-title fw-bold">${vacant.name}</h5>
+                                            <p class="card-text">${vacant.description}</p>
+                                            <p class="card-text text-muted">${vacant.requirements}</p>
+                                        </div>
+                                        <div class="card-footer bg-transparent d-flex justify-content-end">
+                                            <button class="btn btn-primary">Edit</a>
+                                            <button class="btn btn-danger ms-3 del" data-id="${vacant.id}">Cancel</button>
                                         </div>
                                     </div>
                                 </div>`
@@ -26,12 +28,11 @@ export async function compVacants() {
 
 async function getCompVacants(comp) {
     try {
-        const response = await fetch(`http://localhost:3000/users?id=${comp.id}`);
-        let users = await response.json();
-        return {users};
-
+        const response = await fetch(`http://localhost:3000/vacants?idComp=${comp.id}`);
+        let vacants = await response.json();
+        return vacants;
     } catch (error) {
-        console.log('Login failed:', error);
-        return { error: 'There was a problem trying to log in.' };
+        console.log('error:', error);
+        return { error: 'There was a problem trying to find the information.' };
     }
 }

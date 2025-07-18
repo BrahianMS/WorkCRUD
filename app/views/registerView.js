@@ -1,6 +1,6 @@
 export function registerView() {
     const main = document.getElementById("main");
-    main.innerHTML = `<h2 class="text-center mb-4">Welcome to WorkCRUD</h2>
+    main.innerHTML = `<h2 class="text-center mb-4 cont">Welcome to WorkCRUD</h2>
                         <div class="card">
                             <div class="card-body">
                             <h4 class="card-title text-center">Registrarse</h4>

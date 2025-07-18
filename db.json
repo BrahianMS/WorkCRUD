@@ -3,7 +3,7 @@
         {
             "id": "12ds",
             "name": "name",
-            "email": "mar@mar",
+            "email": "mar@mar.com",
             "role": "company",
             "password": "123",
             "profile": {
@@ -16,8 +16,17 @@
     "vacants":[
         {
             "id": "as21",
-            "name": "name",
+            "name": "nada",
             "description": "desc",
+            "requirements": "req",
+            "salary": "salary",
+            "modality": "mod",
+            "idComp": "12ds"
+        },
+        {
+            "id": "sa45",
+            "name": "todo",
+            "description": "se solicita persona que ...",
             "requirements": "req",
             "salary": "salary",
             "modality": "mod",

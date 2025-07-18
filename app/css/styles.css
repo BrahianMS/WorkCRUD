@@ -6,6 +6,9 @@ body {
 
 .container {
   max-width: 600px !important;
+}
+
+.cont {
   margin-top: 100px;
 }
 

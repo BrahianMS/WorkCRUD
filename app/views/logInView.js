@@ -2,7 +2,7 @@ import { router } from "../js/routes.js";
 
 export function loginView() {
     const main = document.getElementById("main");
-    main.innerHTML = `<h2 class="text-center mb-4">Welcome to WorkCRUD</h2>
+    main.innerHTML = `<h2 class="text-center mb-4 cont">Welcome to WorkCRUD</h2>
                         <div class="card">
                         <div class="card-body">
                             <h4 class="card-title text-center">Log-in</h4>
@@ -40,7 +40,7 @@ export function loginView() {
             let inf = { 'id': user.id, 'name': user.name, 'email': user.email, 'role': user.role};
             sessionStorage.setItem('user', JSON.stringify(inf));
             sessionStorage.setItem('Auth', 'true');
-            router(`${user.role}`)
+            window.location.href = '#/home';
         }
     });
         

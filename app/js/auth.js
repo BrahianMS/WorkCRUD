@@ -1,4 +1,4 @@
-import { router } from "./routes";
+import { router } from "./routes.js";
 
 export function guardian() {
     let auth = sessionStorage.getItem('Auth');
