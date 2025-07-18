@@ -1,0 +1,27 @@
+{
+    "users": [
+        {
+            "id": "12ds",
+            "name": "name",
+            "email": "email",
+            "role": "company",
+            "password": "password",
+            "profile": {
+                "logo": "logo",
+                "desc": "desc",
+                "sector": "sector"
+            }
+        }
+    ],
+    "vacants":[
+        {
+            "id": "as21",
+            "name": "name",
+            "description": "desc",
+            "requirements": "req",
+            "salary": "salary",
+            "modality": "mod",
+            "idComp": "12ds"
+        }
+    ]
+}
