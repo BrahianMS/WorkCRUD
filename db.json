@@ -3,9 +3,9 @@
         {
             "id": "12ds",
             "name": "name",
-            "email": "email",
+            "email": "mar@mar",
             "role": "company",
-            "password": "password",
+            "password": "123",
             "profile": {
                 "logo": "logo",
                 "desc": "desc",

@@ -5,6 +5,7 @@ export async function compVacants() {
     const list = document.getElementById('jobList')
     const comp = JSON.parse(sessionStorage.getItem('user'))
     const vacants = await getCompVacants(comp);
+    console.log(vacants)
     list.innerHTML = ""
     if (vacants) {
         vacants.forEach(vacant => {

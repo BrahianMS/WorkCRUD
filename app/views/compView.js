@@ -1,8 +1,9 @@
-import { compProfile } from "../js/compProfile";
-import { newVacant } from "../js/compNewVacant";
-import { compVacants } from "../js/compVacants";
+import { compProfile } from "../js/compProfile.js";
+import { newVacant } from "../js/compNewVacant.js";
+import { compVacants } from "../js/compVacants.js";
 
 export function compView() {
+    
     const main = document.getElementById("main");
     main.innerHTML = `<nav class="navbar navbar-expand-lg bg-body-tertiary">
                         <div class="container-fluid">

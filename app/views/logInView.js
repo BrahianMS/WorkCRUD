@@ -1,3 +1,5 @@
+import { router } from "../js/routes.js";
+
 export function loginView() {
     const main = document.getElementById("main");
     main.innerHTML = `<h2 class="text-center mb-4">Welcome to WorkCRUD</h2>
@@ -38,7 +40,7 @@ export function loginView() {
             let inf = { 'id': user.id, 'name': user.name, 'email': user.email, 'role': user.role};
             sessionStorage.setItem('user', JSON.stringify(inf));
             sessionStorage.setItem('Auth', 'true');
-            window.location.href = '#/dashboard';
+            router(`${user.role}`)
         }
     });
         
